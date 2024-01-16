@@ -97,14 +97,15 @@ body {
     padding-top: 0.5cm;
     padding-bottom: 0.5cm;
     font-weight: 800;
-    padding-left: 0.2cm;
+    
     
 }
 .topnav a{
     background-color: #333;
     padding-top: 0.5cm;
     padding-bottom: 0.5cm;
-    padding-left: 1;
+    padding-left: 0.6cm;
+    padding-right: 1cm
     
 }
 .topnav a:active{
