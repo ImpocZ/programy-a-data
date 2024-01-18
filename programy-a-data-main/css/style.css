@@ -75,7 +75,7 @@ body {
      background-color: #721717; /* Tmavě červené pozadí */
      color: white; /* Bílý text pro kontrast */
  }
- figured {
+ .figured{
     text-align: right;
 }
 
