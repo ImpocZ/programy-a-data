@@ -1,15 +1,14 @@
 /* Globální nastavení pro celý dokument */
 body {
-    background-color: beige; /* Barva pozadí celého těla stránky bude béžová */
+    background-color: rgb(88, 88, 88); /* Barva pozadí celého těla stránky bude béžová */
     margin: 0; /* Odstraní výchozí okraje stránky */
     line-height: 130%; /* Zvětší výšku řádku pro lepší čitelnost */
  }
- 
  /* Nastavení pro hlavní část stránky */
  main {
      width: 1200px; /* Šířka hlavního obsahu */
      margin: 0 auto; /* Vycentruje hlavní obsah na stránce */
-     background-color: white; /* Barva pozadí hlavní části */
+     background-color: rgba(0, 0, 0, 0.581); /* Barva pozadí hlavní části */
      padding: 20px; /* Vnitřní okraje pro hlavní obsah */
  }
  
@@ -18,7 +17,9 @@ body {
      background-color: rgb(25, 58, 91); /* Barva pozadí záhlaví */
      padding: 40px 0; /* Vnitřní odsazení od horního a spodního okraje */
  }
- 
+ .supe{
+    color: wheat;
+ }
  /* Nastavení pro patičku */
  footer {
      text-align: center; /* Text bude zarovnán na střed */
@@ -30,28 +31,46 @@ body {
  h1, h2, h3 {
      font-family: Arial, Helvetica, sans-serif; /* Výchozí písmo pro nadpisy */
  }
- 
+ p {
+    color: antiquewhite;
+ }
  /* Nastavení pro nadpis první úrovně */
  h1 {
      font-size: 2em; /* Dvojnásobná velikost základní velikosti textu */
-     color: aqua; /* Světle modrá barva textu */
+     color: rgb(0, 189, 25); /* Světle modrá barva textu */
      text-align: center; /* Zarovnání textu na střed */
      text-transform: uppercase; /* Text bude zobrazen velkými písmeny */
     }
  
  /* Nastavení pro nadpis druhé úrovně */
  h2 {
-     color: rgb(24, 72, 120); /* Specifická modrá barva textu */
+     color: rgb(50, 56, 217); /* Specifická modrá barva textu */
      margin-top: 30px; /* Horní okraj pro oddělení od předchozího obsahu */
  }
  
  /* Nastavení pro nadpis třetí úrovně */
  h3 {
-     border-bottom: 1px dotted #333; /* Čárkované spodní ohraničení */
+     border-bottom: 1px dotted #ffffff; /* Čárkované spodní ohraničení */
+     color: antiquewhite;
      font-size: 1.2em; /* Zvýšená velikost písma */
      margin-top: 20px; /* Horní okraj pro oddělení od předchozího obsahu */
  }
- 
+ h4 {
+    font-family: 'Courier New', Courier, monospace;
+    color: wheat;
+    font-size: large;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    text-decoration-line: overline;
+    padding: 0px;
+ }
+ .les{
+    margin-bottom: 0px; 
+    padding-top: 0cm;
+ }
+ .ss{
+    text-align: left;
+ }
  /* Nastavení pro odkazy */
  a {
      color: #ff0000; /* Červená barva textu odkazů */
@@ -60,8 +79,11 @@ body {
  
  /* Efekt přejetí myší pro odkazy */
  a:hover {
-     background-color: bisque; /* Světlé pozadí při najetí myší */
+     background-color: cadetblue; /* Světlé pozadí při najetí myší */
      text-decoration: underline; /* Přidá podtržení textu při najetí myší */
+ }
+ dd{
+    color: antiquewhite;
  }
  
  /* Speciální styl pro prvek <code> a <mark> */
@@ -91,7 +113,7 @@ body {
     overflow: hidden;
     text-align: left;
     color: crimson;
-    background-color: burlywood;
+    background-color: rgb(161, 127, 82);
     font-family: 'Courier New', Courier, monospace;
     font-size: 40px;
     padding-top: 0.5cm;

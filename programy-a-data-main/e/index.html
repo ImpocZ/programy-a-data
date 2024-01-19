@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Instalace programů</title>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="../index.html">Menu</a>
+      </div>
+    <header> 
+    <h1>
+        Instalace programů
+    </h1>
+</header> 
+   <main>
+    <h2 id="inst.+odinst.">Instalace a odinstalace programů</h2>
+    <h3>Instalace programu</h3>
+    <p>
+    <strong>Instalace programu</strong>. Program, který si koupíme, dostaneme na CD/DVD disku, nebo si ho stáhneme z Internetu. Po vložení instalačního CD/DVD disku se většinou okamžitě spustí instalační program (<mark>díky souboru <code>autorun.inf</code></mark>), v případě softwaru staženého z Internetu musíme instalační program spustit sami (<em>ve Windows nejčastěji poklepáním na soubory <code>install.exe</code> či <code>setup.exe</code></em>). <b>Průvodce instalací</b> (<i>wizzard</i>) si často vyžádá <em>sériové číslo</em> a souhlas s <a href="../f/index.html" target="_blank"></a>, zeptá se, kam (<em>do jaké složky na disku</em>) se má program uložit a kam se má umístit zástupce programu, případně žádá další informace. Potom instalační program nahraje všechny soubory, ze kterých se program skládá, na pevný disk počítače, provede nutnou konfiguraci (<em>v systémovém registru Windows, konfiguračních souborech</em>) a nakonec vytvoří zástupce programu pro jeho snadné spuštění. K instalaci většiny programů je nutné mít <abbr title="administrátorská práva (mít administrátorský účet a k němu přístup, aby jsme mohli ovládat celý počítač.)">práva správce</abbr>
+    </p>
+    <h3>Odinstalace programu</h3>
+    <p><strong>Odinstalace  programu</strong>.  Úplné  odebrání  programu  bývá  paradoxně  často složitější, zvláště v systémech <b>Windows</b>. Při instalaci si program nahraje své komponenty do mnoha složek včetně <em>systémových</em>, sdílí některé soubory s jinými programy (<em>dynamické knihovny</em> <a href="">DLL</a>), vytvoří záznamy v <em>tzv. registru</em>, při  svém  běhu  vytváří  pomocné  soubory.  Program,  zajišťující  odinstalování aplikace, často neví přesně, kde všude jsou programové soubory uložené a všechny je nesmaže. V řadě případů tak dochází k hromadění zbytečných a nepoužívaných souborů. Pro jejich odstranění lze používat některé speciální utility – <mark><abbr title="(program pro čištění registrů)">např. RegCleaner</abbr></mark> . <mark>Při podobných operacích je však nutné postupovat velmi obezřetně, aby nedošlo k odstranění některé důležité součásti systému nebo používaného programu!
+    </mark> V <b>linuxových systémech</b> je lépe vyřešeno oddělení systémových a uživatelských souborů, úplné odstranění nepotřebného programu je proto pravděpodobnější.
+    </p>
+    <h4>Lokalizace</h4>
+    <p class="les">
+    <em><b>Lokalizace  je  překlad  programu,  v  našem  případě  do  češtiny.</b> Většina významných softwarových firem pochází z anglicky mluvících zemí a originály programů tedy existují v angličtině. Dnes je však zcela běžné, že tyto firmy mají místní zastoupení, která zajišťují prodej programů, ale také je před prodejem <b>lokalizují - převedou do češtiny</b>. Lokalizace je drahá a časově náročná činnost, protože se musí přeložit nejen volby nabídek a obsah dialogových oken, ale také nápověda k programu a návod k programu (manuál), případně vytvořit dělicí slovník pro české dělení slov a český korektor pravopisu</em>
+    </p>
+    <h2 id="fox">Platforma a kompatibilita</h2>
+    <p>
+    <strong>Platforma a kompatibilita</strong>. V souvislosti s určitým typem OS i typem procesoru používáme pojem platforma - <em>např. Windows, Linux, OS X</em>. Používaný program musí být určen pro operační systém, který je na počítači nainstalován; pod jiným systémem většinou nepracuje (<em>např. program určený pro MS Windows nebude pracovat pod Linuxem a naopak</em>). Mnoho programů, zvláště z oblasti svobodného software (<em><a href="/f/index.html#Open-Source">free software</a></em>), má proto verze určené pro několik operačních systémů – <abbr title ="dostupné na několika platformách (Windows, Linux, MacOS..)">jsou multiplatformní</abbr>. Problémy se spuštěním programu však mohou nastat i na jedné platformě v souvislosti s různými verzemi OS i rozdíly mezi <em>32bitovými a 64bitovými</em> systémy (<em>například nový program určený pro MS Windows může spolehlivě fungovat v novějších verzích Windows, ale nemusí pracovat pod starší verzí stejného OS</em>). Při pořizování programu si proto vždy musíme ověřit, zda je <abbr title="(ve funkční shodě)">kompatibilní</abbr>  s námi používaným operačním systémem. V nových systémech Windows je v případě problémů možné využít nastavení na kartě <strong>Kompatibilita</strong>, která je součástí panelu Vlastnosti pro zástupce dané aplikace.
+    </p>
+    <figure>
+        <img src="../img/KompatibilitaFNV.png" alt="ukázka karty kompatibilita" style="width: 500px;">
+    </figure>
+    <h2 id="tail">Verze programu</h2>
+    <p>
+    <strong>Verze programů</strong>. U počítačových programů je důležitá jeho verze, která se označuje  <em>číslem  za  názvem  programu.</em>  Nový  program  může  být  například označen jako verze <code>1.0.</code> Některé dodatečně zjištěné dílčí nedostatky nebo bezpečnostní problémy řeší aktualizace programu (<em>dnes nejčastěji přes Internet</em>), <i>update</i>. Aktualizace jsou zakázníkům, kteří si zakoupili určitou verzi programu, obvykle poskytovány bezplatně. Pro přehlednost jsou označovány buď datem vydání, nebo symbolickým číselným vyjádřením podverze –<em> např. <code>1.1</code> nebo <code>1.23</code> apod.</em> Povýšení na novou verzi (<em><code>např. 2.0</code></em>), <strong>upgrade</strong>, přináší významnější změny ve vývoji programu a v případě komerčního software je třeba vyšší verzi znovu zaplatit. Bývá pravidlem, že nové verze mají nové funkce a lepší ovládání, ale také vyšší nároky na výkon počítače. Před provedením upgrade je tedy nutné zjistit doporučenou (<em>případně minimální</em>) konfiguraci počítače, aby bylo možné program na daném počítači možné vůbec používat. Opačný postup, tedy použití nižší verze programu (např. kvůli nekompatibilitě s instalovaných OS nebo nedostatečnou konfigurací počítače), se nazývá <strong>downgrade</strong>.
+    </p>
+    <figure>
+        <img src="../img/requirements.png" alt="požadavky pro spuštění programu." style="width: 1000px;">
+    </figure>
+    <h4>Registrace programu</h4>
+    <p>Registrace programu je zaevidování jeho uživatele do databáze výrobce programu. Registrace je nepovinná a přináší většinou několik výhod:
+    </p>
+    
+
+    
+        <dl>
+            <dt>
+                
+            </dt>
+            <dd>
+                • Zákazník má nárok na upgrade programu za sníženou cenu. Uživatel se často včas dozví o časově omezených nabídkách výhodného nákupu upgradu nebo dalších programů od stejné firmy.
+            </dd>
+            <dd>
+                • Někteří výrobci programů posílají svým registrovaným uživatelům materiály (časopisy, prospekty), kde se dozvíte zkušenosti jiných uživatelů s programem, bývají zde informace o nových verzích programu, případně o vzniklých doplňcích daného programu.
+            </dd>
+            <dd>
+                • U některých programů po registraci vzniká nárok na využití zákaznické linky v případě potíží s programem.
+            </dd>
+
+        </dl>
+    
+    </main> 
+   <footer>
+    <hr>
+    &copy; 2024, autor: <b>Šenk Radim</b>, třída: IT1&reg;
+   </footer>
+</body>
+</html>
